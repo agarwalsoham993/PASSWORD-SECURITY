@@ -1,0 +1,48 @@
+What it looks like when the mentioned hash type is not the actual format of encrypting
+100 = code for SHA256 ( uses 64 bits but given ones have 32 bits rather)
+
+C:\Users\agarw\Desktop\hashcat-6.2.6>hashcat -m 100 -a 0  hashtask.txt wordlists\rockyou.txt --force
+hashcat (v6.2.6) starting
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+OpenCL API (OpenCL 3.0 ) - Platform #1 [Intel(R) Corporation]
+=============================================================
+* Device #1: Intel(R) UHD Graphics, 1568/3252 MB (813 MB allocatable), 80MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Hashfile 'hashtask.txt' on line 1 (e10adc3949ba59abbe56e057f20f883e): Token length exception
+Hashfile 'hashtask.txt' on line 2 (25f9e794323b453885f5181f1b624d0b): Token length exception
+Hashfile 'hashtask.txt' on line 3 (d8578edf8458ce06fbc5bb76a58c5ca4): Token length exception
+Hashfile 'hashtask.txt' on line 4 (5f4dcc3b5aa765d61d8327deb882cf99): Token length exception
+Hashfile 'hashtask.txt' on line 5 (96e79218965eb72c92a549dd5a330112): Token length exception
+Hashfile 'hashtask.txt' on line 6 (25d55ad283aa400af464c76d713c07ad): Token length exception
+Hashfile 'hashtask.txt' on line 7 (e99a18c428cb38d5f260853678922e03): Token length exception
+Hashfile 'hashtask.txt' on line 8 (fcea920f7412b5da7be0cf42b8c93759): Token length exception
+Hashfile 'hashtask.txt' on line 9 (7c6a180b36896a0a8c02787eeafb0e4c): Token length exception
+Hashfile 'hashtask.txt' on line 10 (6c569aabbf7775ef8fc570e228c16b98): Token length exception
+Hashfile 'hashtask.txt' on line 11 (3f230640b78d7e71ac5514e57935eb69): Token length exception
+Hashfile 'hashtask.txt' on line 12 (917eb5e9d6d6bca820922a0c6f7cc28b): Token length exception
+Hashfile 'hashtask.txt' on line 13 (f6a0cb102c62879d397b12b62c092c06): Token length exception
+Hashfile 'hashtask.txt' on line 14 (9b3b269ad0a208090309f091b3aba9db): Token length exception
+Hashfile 'hashtask.txt' on line 15 (16ced47d3fc931483e24933665cded6d): Token length exception
+Hashfile 'hashtask.txt' on line 16 (1f5c5683982d7c3814d4d9e6d749b21e): Token length exception
+Hashfile 'hashtask.txt' on line 17 (8d763385e0476ae208f21bc63956f748): Token length exception
+Hashfile 'hashtask.txt' on line 18 (defebde7b6ab6f24d5824682a16c3ae4): Token length exception
+Hashfile 'hashtask.txt' on line 19 (bdda5f03128bcbdfa78d8934529048cf): Token length exception
+
+* Token length exception: 19/19 hashes
+  This error happens if the wrong hash type is specified, if the hashes are
+  malformed, or if input is otherwise not as expected (for example, if the
+  --username option is used but no username is present)
+
+No hashes loaded.
+
+Started: Mon Feb 24 01:59:22 2025
+Stopped: Mon Feb 24 01:59:24 2025
+
+C:\Users\agarw\Desktop\hashcat-6.2.6>
